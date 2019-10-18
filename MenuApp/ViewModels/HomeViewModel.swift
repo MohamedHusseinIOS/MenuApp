@@ -42,7 +42,6 @@ class HomeViewModel: BaseViewModel, ViewModelType {
             tags.onCompleted()
             return
         }
-        
         requestTags(by: page)
     }
     
