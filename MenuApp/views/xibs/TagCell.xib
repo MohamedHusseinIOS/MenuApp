@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagCell" id="E5g-hf-pdf" customClass="TagCell" customModule="MenuApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="u1S-2O-VE0">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xd-fE-lBm">
+                        <rect key="frame" x="10" y="10" width="400" height="380"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gd7-lG-2bx">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="380"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMZ-9F-svq">
+                                <rect key="frame" x="20" y="329.5" width="360" height="20.5"/>
+                                <color key="backgroundColor" red="0.84757989649999999" green="0.34630757569999998" blue="0.25941556690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Gd7-lG-2bx" secondAttribute="bottom" id="NFz-4c-x6r"/>
+                            <constraint firstAttribute="trailing" secondItem="RMZ-9F-svq" secondAttribute="trailing" constant="20" id="Neh-3v-lYU"/>
+                            <constraint firstItem="Gd7-lG-2bx" firstAttribute="top" secondItem="2xd-fE-lBm" secondAttribute="top" id="Tk9-Qu-3yh"/>
+                            <constraint firstItem="RMZ-9F-svq" firstAttribute="leading" secondItem="2xd-fE-lBm" secondAttribute="leading" constant="20" id="WHQ-JE-62T"/>
+                            <constraint firstAttribute="trailing" secondItem="Gd7-lG-2bx" secondAttribute="trailing" id="fNN-TE-JkL"/>
+                            <constraint firstAttribute="bottom" secondItem="RMZ-9F-svq" secondAttribute="bottom" constant="30" id="rfb-tW-ELp"/>
+                            <constraint firstItem="Gd7-lG-2bx" firstAttribute="leading" secondItem="2xd-fE-lBm" secondAttribute="leading" id="x0I-p0-0mx"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2xd-fE-lBm" firstAttribute="top" secondItem="u1S-2O-VE0" secondAttribute="top" constant="10" id="3q8-B4-bRc"/>
+                    <constraint firstAttribute="trailing" secondItem="2xd-fE-lBm" secondAttribute="trailing" constant="10" id="6Nm-2N-9ng"/>
+                    <constraint firstItem="2xd-fE-lBm" firstAttribute="leading" secondItem="u1S-2O-VE0" secondAttribute="leading" constant="10" id="XMZ-rz-9Q3"/>
+                    <constraint firstAttribute="bottom" secondItem="2xd-fE-lBm" secondAttribute="bottom" constant="10" id="gI2-13-5Ph"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="420" height="501"/>
+            <connections>
+                <outlet property="tagImage" destination="Gd7-lG-2bx" id="ULP-0M-6dB"/>
+                <outlet property="tagNameLbl" destination="RMZ-9F-svq" id="kP2-Bc-pbe"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="95.089285714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>
